@@ -1,0 +1,8 @@
+sudo nano /etc/dphys-swapfile
+# After typing this command, a file will be opened. 
+# Change the Raspberry Pi’s swapfile size back to its origina swapfile size by finding the CONF_SWAPSIZE=1024 and then changing it to CONF_SWAPSIZE=100.
+# Save the changes by pressing ctrl + O and then ctrl + X. To fully apply the changes in effect, type the following commands in the terminal: 
+sudo /etc/init.d/dphys-swapfile stop
+sudo /etc/init.d/dphys-swapfile start
+sudo raspi-config
+# Go to the memory split from the advanced options, and then change it from 16 to its original value which is 128. Reboot the Raspberry Pi.
