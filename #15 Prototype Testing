@@ -1,0 +1,10 @@
+$ cd ~
+$ cd covid
+python3 KioskFile1.py
+python3 KioskFile2.py
+sudo apt update 
+sudo apt install snapd
+sudo reboot
+# After rebooting, type the suceeding commands:
+sudo snap install ngrok
+ngrok HTTP 8050
